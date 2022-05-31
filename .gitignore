@@ -1,0 +1,17 @@
+/node_modules
+/public/hot
+/public/storage
+/vendor
+.env
+.env.development
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+# /.vscode # For snippet
+
+/bootstrap/cache/routes-v7.php

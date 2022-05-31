@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "5c3a6e71-3cff-4f9d-9acb-63d66c357adb",
+		"name": "Postman Template",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Foo Bars",
+			"item": [
+				{
+					"name": "Create Foo Bar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "column_name",
+									"value": "column_value",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/foo-bars",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"foo-bars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Foo Bars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/foo-bars?per_page=5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"foo-bars"
+							],
+							"query": [
+								{
+									"key": "per_page",
+									"value": "5",
+									"description": "'all' to get all items"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "page number",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "",
+									"description": "search something",
+									"disabled": true
+								},
+								{
+									"key": "sort_by[0]",
+									"value": "created_at",
+									"description": "column name to be sorted. mostly the default is created at",
+									"disabled": true
+								},
+								{
+									"key": "sort_desc[0]",
+									"value": "1",
+									"description": "1 - desc, 0 - asc",
+									"disabled": true
+								},
+								{
+									"key": "filter_name",
+									"value": "filter_value",
+									"description": "add some params for filters or something",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Foo Bar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/api/foo-bars/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"foo-bars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Foo Bar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/api/foo-bars/1/?column_name=column_value",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"foo-bars",
+								"1",
+								""
+							],
+							"query": [
+								{
+									"key": "column_name",
+									"value": "column_value"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Foo Bar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/api/foo-bars/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"foo-bars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
